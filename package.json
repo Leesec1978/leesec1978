@@ -37,8 +37,9 @@
       "entrypoint": "./application/app.py",
       "dependencies": [
         "pandas",
-        "numpy",
-        "seaborn"
+        "statsmodels",
+        "plotly",
+        "scipy"
       ]
     }
   },

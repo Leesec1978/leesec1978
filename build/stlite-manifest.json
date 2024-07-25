@@ -1,5 +1,0 @@
-{
-  "entrypoint": "./application/app.py",
-  "embed": false,
-  "nodeJsWorker": false
-}

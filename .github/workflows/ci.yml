@@ -7,25 +7,25 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
       - name: Run dump
         run: npm run dump
 
-    - name: Build Windows executable
-      run: npm run build
+      - name: Build Windows executable
+        run: npm run build
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: app-win
-        path: dist/
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-win
+          path: dist/
